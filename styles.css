@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color:#426696;
+
+}
+main{
+    background: linear-gradient(to right top , #65dfc9 , #6cdbeb);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass{
+    background: white;
+    min-height: 80vh;
+    width:60%;
+    border-radius: 2rem;
+    background:linear-gradient(
+        to right bottom , 
+        rgba(255,255,255 , 0.7), 
+        rgba(255,255,255 , 0.3));
+        z-index: 2;
+        backdrop-filter: blur(2rem);
+        position: relative;
+}
+.circle1 , .circle2{
+    background: white;
+    background:linear-gradient(
+        to right bottom , 
+        rgba(255,255,255 , 0.8), 
+        rgba(255,255,255 , 0.3));
+    height:15rem;
+    width:15rem;
+    position: absolute;
+    border-radius: 50%;
+    
+}
+.circle1{
+    top:5%;
+    right: 10%;
+}
+.circle2{
+    bottom: 3%;
+    left:10%
+}
+.login-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+
+
+.form{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    box-sizing: border-box;
+    padding: 3rem;
+   
+    
+}
+.login-img{
+    width: 25rem;
+}
+.login-img img{
+    height: 20rem;
+    width:20rem;
+}
+.input{
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    
+    
+}
+.input input{
+    background:linear-gradient(
+        to right bottom , 
+        rgba(255,255,255 , 0.7), 
+        rgba(255,255,255 , 0.3));
+        border: none;
+        padding: 0.7rem;
+        color:#658ec6;
+    font-weight: 500;
+    opacity:0.8;
+       
+        border-radius: 2rem;
+}
+button{
+    background: linear-gradient(to right top ,#65dfc9 , #6cdbeb);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
+@media screen and (max-width: 900px)  {
+    .login-input{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+  
